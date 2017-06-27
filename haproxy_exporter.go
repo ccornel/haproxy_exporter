@@ -215,7 +215,6 @@ func NewExporter(uri string, selectedServerMetrics map[int]*prometheus.GaugeVec,
 			59: newBackendMetric("http_connect_time", "Avg. HTTP connect time for last 1024 successful connections.", nil),
 			60: newBackendMetric("http_response_time", "Avg. HTTP response time for last 1024 successful connections.", nil),
 			61: newBackendMetric("http_total_time", "Avg. HTTP total time for last 1024 successful connections.", nil),
-
 		},
 		serverMetrics: selectedServerMetrics,
 	}, nil
