@@ -309,6 +309,7 @@ func (e *Exporter) scrape() {
 	reader := csv.NewReader(body)
 	reader.TrailingComma = true
 	reader.Comment = '#'
+	reader.LazyQuotes = true
 
 loop:
 	for {
